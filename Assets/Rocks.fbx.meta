@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: b2697f38874b14458bfedb34cccf3602
+timeCreated: 1494711407
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Circle
+    100002: Circle_10
+    100004: Circle_2
+    100006: Circle_3
+    100008: Circle_4
+    100010: Circle_5
+    100012: Circle_6
+    100014: Circle_7
+    100016: Circle_8
+    100018: Circle_9
+    100020: Cogwheel
+    100022: Cogwheel_2
+    100024: Cogwheel_3
+    100026: Cogwheel_4
+    100028: Cogwheel_5
+    100030: Cube_1
+    100032: Cube_1_2
+    100034: Null
+    100036: Rectangle
+    100038: Rectangle_2
+    100040: Rectangle_3
+    100042: Rectangle_4
+    100044: Rectangle_5
+    100046: Rock_Circle
+    100048: Rock_Square
+    100050: //RootNode
+    100052: Sweep_NURBS
+    100054: Sweep_NURBS_1
+    100056: Sweep_NURBS_1_2
+    100058: Sweep_NURBS_1_3
+    100060: Sweep_NURBS_2
+    100062: Sweep_NURBS_2_2
+    100064: Sweep_NURBS_3
+    100066: Sweep_NURBS_3_2
+    100068: Sweep_NURBS_3_3
+    100070: Sweep_NURBS_3_4
+    400000: Circle
+    400002: Circle_10
+    400004: Circle_2
+    400006: Circle_3
+    400008: Circle_4
+    400010: Circle_5
+    400012: Circle_6
+    400014: Circle_7
+    400016: Circle_8
+    400018: Circle_9
+    400020: Cogwheel
+    400022: Cogwheel_2
+    400024: Cogwheel_3
+    400026: Cogwheel_4
+    400028: Cogwheel_5
+    400030: Cube_1
+    400032: Cube_1_2
+    400034: Null
+    400036: Rectangle
+    400038: Rectangle_2
+    400040: Rectangle_3
+    400042: Rectangle_4
+    400044: Rectangle_5
+    400046: Rock_Circle
+    400048: Rock_Square
+    400050: //RootNode
+    400052: Sweep_NURBS
+    400054: Sweep_NURBS_1
+    400056: Sweep_NURBS_1_2
+    400058: Sweep_NURBS_1_3
+    400060: Sweep_NURBS_2
+    400062: Sweep_NURBS_2_2
+    400064: Sweep_NURBS_3
+    400066: Sweep_NURBS_3_2
+    400068: Sweep_NURBS_3_3
+    400070: Sweep_NURBS_3_4
+    2300000: Cube_1
+    2300002: Cube_1_2
+    2300004: Sweep_NURBS
+    2300006: Sweep_NURBS_1
+    2300008: Sweep_NURBS_1_2
+    2300010: Sweep_NURBS_1_3
+    2300012: Sweep_NURBS_2
+    2300014: Sweep_NURBS_2_2
+    2300016: Sweep_NURBS_3
+    2300018: Sweep_NURBS_3_2
+    2300020: Sweep_NURBS_3_3
+    2300022: Sweep_NURBS_3_4
+    3300000: Cube_1
+    3300002: Cube_1_2
+    3300004: Sweep_NURBS
+    3300006: Sweep_NURBS_1
+    3300008: Sweep_NURBS_1_2
+    3300010: Sweep_NURBS_1_3
+    3300012: Sweep_NURBS_2
+    3300014: Sweep_NURBS_2_2
+    3300016: Sweep_NURBS_3
+    3300018: Sweep_NURBS_3_2
+    3300020: Sweep_NURBS_3_3
+    3300022: Sweep_NURBS_3_4
+    4300000: Sweep_NURBS_1
+    4300002: Sweep_NURBS_1_2
+    4300004: Sweep_NURBS
+    4300006: Sweep_NURBS_3
+    4300008: Sweep_NURBS_3_2
+    4300010: Cube_1
+    4300012: Sweep_NURBS_3_3
+    4300014: Sweep_NURBS_3_4
+    4300016: Sweep_NURBS_2
+    4300018: Sweep_NURBS_1_3
+    4300020: Sweep_NURBS_2_2
+    4300022: Cube_1_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

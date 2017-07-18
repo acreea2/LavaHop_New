@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 72abdb4b8a5f0430b8e40535ff2f68e9
+timeCreated: 1493578181
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BezierCurve
+    100002: Big
+    100004: Big.001
+    100006: Big.002
+    100008: Big.003
+    100010: Big.004
+    100012: Big.005
+    100014: Big.006
+    100016: Big.007
+    100018: Big.008
+    100020: Big.009
+    100022: Big.010
+    100024: Big.011
+    100026: Big.012
+    100028: Big.013
+    100030: Big.014
+    100032: Big.015
+    100034: Cube
+    100036: Cube.001
+    100038: Floor
+    100040: Floor.001
+    100042: Plane
+    100044: //RootNode
+    100046: Small.001
+    100048: Small.002
+    100050: Small.003
+    100052: Small.004
+    100054: Torus.001
+    100056: Torus.002
+    100058: Torus.003
+    100060: Torus.004
+    400000: BezierCurve
+    400002: Big
+    400004: Big.001
+    400006: Big.002
+    400008: Big.003
+    400010: Big.004
+    400012: Big.005
+    400014: Big.006
+    400016: Big.007
+    400018: Big.008
+    400020: Big.009
+    400022: Big.010
+    400024: Big.011
+    400026: Big.012
+    400028: Big.013
+    400030: Big.014
+    400032: Big.015
+    400034: Cube
+    400036: Cube.001
+    400038: Floor
+    400040: Floor.001
+    400042: Plane
+    400044: //RootNode
+    400046: Small.001
+    400048: Small.002
+    400050: Small.003
+    400052: Small.004
+    400054: Torus.001
+    400056: Torus.002
+    400058: Torus.003
+    400060: Torus.004
+    2300000: BezierCurve
+    2300002: Big
+    2300004: Big.001
+    2300006: Big.002
+    2300008: Big.003
+    2300010: Big.004
+    2300012: Big.005
+    2300014: Big.006
+    2300016: Big.007
+    2300018: Big.008
+    2300020: Big.009
+    2300022: Big.010
+    2300024: Big.011
+    2300026: Big.012
+    2300028: Big.013
+    2300030: Big.014
+    2300032: Big.015
+    2300034: Cube
+    2300036: Cube.001
+    2300038: Floor
+    2300040: Floor.001
+    2300042: Plane
+    2300044: Small.001
+    2300046: Small.002
+    2300048: Small.003
+    2300050: Small.004
+    2300052: Torus.001
+    2300054: Torus.002
+    2300056: Torus.003
+    2300058: Torus.004
+    3300000: BezierCurve
+    3300002: Big
+    3300004: Big.001
+    3300006: Big.002
+    3300008: Big.003
+    3300010: Big.004
+    3300012: Big.005
+    3300014: Big.006
+    3300016: Big.007
+    3300018: Big.008
+    3300020: Big.009
+    3300022: Big.010
+    3300024: Big.011
+    3300026: Big.012
+    3300028: Big.013
+    3300030: Big.014
+    3300032: Big.015
+    3300034: Cube
+    3300036: Cube.001
+    3300038: Floor
+    3300040: Floor.001
+    3300042: Plane
+    3300044: Small.001
+    3300046: Small.002
+    3300048: Small.003
+    3300050: Small.004
+    3300052: Torus.001
+    3300054: Torus.002
+    3300056: Torus.003
+    3300058: Torus.004
+    4300000: BezierCurve
+    4300002: Plane
+    4300004: Cube.001
+    4300006: Cube
+    4300008: Torus.003
+    4300010: Torus.002
+    4300012: Big.001
+    4300014: Small.004
+    4300016: Big.015
+    4300018: Big.014
+    4300020: Big.013
+    4300022: Big.012
+    4300024: Big.011
+    4300026: Big.010
+    4300028: Big.009
+    4300030: Big.008
+    4300032: Floor.001
+    4300034: Big.007
+    4300036: Big.006
+    4300038: Big.005
+    4300040: Big.004
+    4300042: Big.003
+    4300044: Big.002
+    4300046: Small.003
+    4300048: Small.002
+    4300050: Small.001
+    4300052: Floor
+    4300054: Big
+    4300056: Torus.001
+    4300058: Torus.004
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
