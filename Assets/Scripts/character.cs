@@ -76,19 +76,18 @@ public class character : MonoBehaviour {
 			jumpsRemaining = jumpTotal;
 
 			SSLanding.PlayOneShot (Land);
-			Debug.Log("Land Sound Start");
 		}
 
 		if (other.gameObject.tag == "Collectible") { // Gets coin
 			Destroy (other.gameObject);
 			incrementScore ();
 			SSCoins.PlayOneShot (Coins);
-			Debug.Log("Coin Sound Start");
+			Debug.Log("Coin Sound Start" + score);
 
 			if (score == 5) {
 				Destroy (other.gameObject);
 				SPortal.PlayOneShot (Portal);
-				Debug.Log("Large Portal Sound");
+				Debug.Log("Large Portal Sound" + score);
 			}
 		}
 
@@ -96,7 +95,7 @@ public class character : MonoBehaviour {
 			StartCoroutine(dieAndReset ());
 
 			SSDeath.PlayOneShot (Death);
-			Debug.Log("Death Sound Start");
+//			Debug.Log("Death Sound Start");
 			rb.useGravity = false;
 			rb.velocity = new Vector3(0, -0.25f, 0);
 			jumpsRemaining = 0;
@@ -124,7 +123,6 @@ public class character : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
 			jump ();
-			Debug.Log("Jump Sound Start");
 		}
 
 		if (Input.GetKey ("a")) {

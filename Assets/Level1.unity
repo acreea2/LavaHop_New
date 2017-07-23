@@ -683,8 +683,8 @@ MonoBehaviour:
   Land: {fileID: 8300000, guid: 3f948bf84234e49379d3e3406814f751, type: 3}
   SSDeath: {fileID: 1675794226}
   Death: {fileID: 8300000, guid: 4ff935fc068b64dc79864dcc3d7ab6c5, type: 3}
-  SPortal: {fileID: 0}
-  Portal: {fileID: 0}
+  SPortal: {fileID: 1172160022}
+  Portal: {fileID: 8300000, guid: f9cadf36ca20540c6a7602b73c4b2e26, type: 3}
   jumpPowerForward: 6
   jumpVelocityUp: 8
 --- !u!54 &226069803
