@@ -32,7 +32,6 @@ public class character : MonoBehaviour {
 
 	void Start()
 	{
-//		StartCoroutine(Example());
 		rb = GetComponent<Rigidbody>();
 		jumpsRemaining = jumpTotal;
 	}
@@ -113,9 +112,17 @@ public class character : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Input.GetMouseButtonDown(0)) {
+		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
 			jump ();
 			Debug.Log("Jump Sound Start");
+		}
+
+		if (Input.GetKey ("a")) {
+			transform.Rotate (Vector3.down);
+		}
+
+		if (Input.GetKey ("d")) {
+			transform.Rotate (Vector3.up);
 		}
 	}
 }
