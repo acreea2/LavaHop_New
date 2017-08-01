@@ -73,21 +73,17 @@ public class character : MonoBehaviour {
 			jumpsRemaining = jumpTotal;
 
 			SSLanding.PlayOneShot (Land);
-			Debug.Log("Land Sound Start");
 		}
 
 		if (other.gameObject.tag == "Collectible") { // Gets coin
 			Destroy (other.gameObject);
 			incrementScore ();
 			SSCoins.PlayOneShot (Coins);
-			Debug.Log("Coin Sound Start");
 		}
 
 		if (other.gameObject.tag == "Lava") { // Death by Lava
 			StartCoroutine(dieAndReset ());
-
 			SSDeath.PlayOneShot (Death);
-			Debug.Log("Death Sound Start");
 			rb.useGravity = false;
 			rb.velocity = new Vector3(0, -0.25f, 0);
 		}
@@ -114,7 +110,6 @@ public class character : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
 			jump ();
-			Debug.Log("Jump Sound Start");
 		}
 
 		if (Input.GetKey ("a")) {
