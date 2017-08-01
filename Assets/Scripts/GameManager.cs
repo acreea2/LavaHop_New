@@ -11,10 +11,8 @@ public class GameManager : MonoBehaviour {
 
 	void Awake() {
 		if (instance == null) {
-			Debug.Log ("instatiating...");
 			instance = this;
 		} else if (instance != this) {
-			Debug.Log ("destroying instance.");
 			Destroy (gameObject);
 		}
 
