@@ -21,6 +21,9 @@ public class character : MonoBehaviour {
 	public AudioSource SSDeath;
 	public AudioClip Death;
 
+	public AudioSource SPortal;
+	public AudioClip Portal;
+
 
 	//	Jumps
 	public float jumpPowerForward = 4f;
@@ -79,6 +82,11 @@ public class character : MonoBehaviour {
 			Destroy (other.gameObject);
 			incrementScore ();
 			SSCoins.PlayOneShot (Coins);
+
+			if (score == 5) {
+				SPortal.PlayOneShot (Portal);
+				Debug.Log("Large Portal Sound" + score);
+			}
 		}
 
 		if (other.gameObject.tag == "Lava") { // Death by Lava
@@ -86,6 +94,7 @@ public class character : MonoBehaviour {
 			SSDeath.PlayOneShot (Death);
 			rb.useGravity = false;
 			rb.velocity = new Vector3(0, -0.25f, 0);
+			jumpsRemaining = 0;
 		}
 
 		if (other.gameObject.tag == "Portal") {
