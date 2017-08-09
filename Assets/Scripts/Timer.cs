@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
-
-	public Text timerText;
 	private float startTime;
+	private Text displayText;
 
 	// Use this for initialization
 	void Start () {
 		startTime = Time.time;
+		displayText = GetComponent<Text> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
-		timerText.text = formatTime(timeElapsed());
+		displayText.text = formatTime(timeElapsed());
 	}
 
 	public float timeElapsed() {

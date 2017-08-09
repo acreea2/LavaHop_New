@@ -40,6 +40,7 @@ public class MyGameController : MonoBehaviour {
 	void Start () {
 		scoreDisplayText = scoreDisplay.GetComponent<GUIText>();
 		levelDisplayText = levelDisplay.GetComponent<GUIText>();
+
 		coinTotal = GameObject.FindGameObjectsWithTag ("Collectible").Length;
 
 		exit = GameObject.Find("Portal_All");
