@@ -3,30 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class highScore : MonoBehaviour {
-
-	public Text highScoreText;
+public class HighScore : MonoBehaviour {
+	private Text displayText;
 
 	private int currentLevel;
 	private float bestTime;
+	private string prefSlug;
 
 	// Use this for initialization
 	void Start () {
+		displayText = GetComponent<Text> ();
 		currentLevel = GameManager.instance.level;
-		bestTime = PlayerPrefs.GetInt ("HighScoreLevel" + currentLevel, 0);
+		prefSlug = GameManager.highScoreSlug + currentLevel;
 
+		bestTime = PlayerPrefs.GetFloat (prefSlug, 0);
 		if (bestTime > 0) {
-			highScoreText.text = "Best Time: " + Timer.formatTime (bestTime);
+			displayText.text = "High Score: " + Timer.formatTime (bestTime);
 		} else {
-			highScoreText.text = "";
+			displayText.text = "High Score: n/a";
 		}
 	}
 
 	public void recordTime(float newTime) {
 		currentLevel = GameManager.instance.level;
 
-		if (bestTime > newTime) {
-			PlayerPrefs.SetFloat ("HighScoreLevel" + currentLevel, newTime);
+		if (bestTime == 0 || bestTime > newTime) {
+			PlayerPrefs.SetFloat (prefSlug, newTime);
 		}
 	}
 }

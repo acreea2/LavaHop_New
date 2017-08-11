@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
+	public static string highScoreSlug = "HighScoreForLevel";
 
 	public int level = 1;
 	private Dictionary<int, string> levels = new Dictionary<int, string>();
