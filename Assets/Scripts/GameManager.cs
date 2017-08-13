@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour {
 		generateLevels ();
 	}
 
+	public void startGame() {
+		SceneManager.LoadScene (levels [level]);
+	}
+
 	public int incrementLevel() {
 		int nextLevel = (level += 1);
 		SceneManager.LoadScene(levels[nextLevel]);
