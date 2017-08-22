@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class menuSelector : MonoBehaviour {
+public class characterMenuSelect : MonoBehaviour {
 
 	private float range = 100f;
 	public Camera cam;

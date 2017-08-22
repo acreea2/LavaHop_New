@@ -660,10 +660,10 @@ GameObject:
   - component: {fileID: 226069805}
   - component: {fileID: 226069804}
   - component: {fileID: 226069803}
-  - component: {fileID: 226069802}
   - component: {fileID: 226069801}
   - component: {fileID: 226069806}
   - component: {fileID: 226069807}
+  - component: {fileID: 226069808}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -697,32 +697,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.01, z: 1}
   m_Center: {x: 0, y: -0.42, z: 0}
---- !u!114 &226069802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 226069799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 205d562c1792442159d7988dc9b59260, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  gameController: {fileID: 1211067990}
-  score: 0
-  SSCoins: {fileID: 0}
-  Coins: {fileID: 8300000, guid: 1f1df6d946ee64004bae26db8d335a24, type: 3}
-  SSJumpSound: {fileID: 0}
-  Jump: {fileID: 8300000, guid: aacc281ebd6394d4e844880d8cfcfa2d, type: 3}
-  SSLanding: {fileID: 0}
-  Land: {fileID: 8300000, guid: 3f948bf84234e49379d3e3406814f751, type: 3}
-  SSDeath: {fileID: 0}
-  Death: {fileID: 8300000, guid: 4ff935fc068b64dc79864dcc3d7ab6c5, type: 3}
-  SPortal: {fileID: 0}
-  Portal: {fileID: 0}
-  jumpPowerForward: 6
-  jumpVelocityUp: 8
 --- !u!54 &226069803
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -798,10 +772,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 226069799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f591191e77843d99c0fe6e7636bf31, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c1820b9108e8447781d939531812848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fpsCam: {fileID: 1687020167}
+  cam: {fileID: 1687020167}
+--- !u!114 &226069808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226069799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3088145fb5d34222b23360bba0ff904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &389720232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5040,7 +5025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e8a00a5c691434d951ef731012c1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 226069802}
+  character: {fileID: 0}
   scoreDisplay: {fileID: 0}
   levelDisplay: {fileID: 0}
   coinTotal: 0

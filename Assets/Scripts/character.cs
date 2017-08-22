@@ -120,13 +120,5 @@ public class character : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
 			jump ();
 		}
-
-		if (Input.GetKey ("a")) {
-			transform.Rotate (Vector3.down);
-		}
-
-		if (Input.GetKey ("d")) {
-			transform.Rotate (Vector3.up);
-		}
 	}
 }
