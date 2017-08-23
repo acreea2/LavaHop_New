@@ -5,19 +5,16 @@ using UnityEngine.UI;
 
 public class MyGameController : MonoBehaviour {
 	public character character;
-	public GameObject scoreDisplay;
-	public GameObject levelDisplay;
-	public int coinTotal;
-	public static MyGameController instance = null;
 
-	public GameObject highScore;
-	public HighScore highScoreScript;
-	public GameObject timer;
-	public Timer timerScript;
-
+	private int coinTotal;
+	private GameObject scoreDisplay;
+	private GameObject levelDisplay;
+	private GameObject highScore;
+	private HighScore highScoreScript;
+	private GameObject timer;
+	private Timer timerScript;
 	private GUIText levelDisplayText;
 	private GUIText scoreDisplayText;
-
 	private GameObject exit;
 
 	// Use this for initialization
@@ -26,6 +23,8 @@ public class MyGameController : MonoBehaviour {
 		highScore = GameObject.Find ("highScore");
 		highScoreScript = (HighScore) highScore.GetComponent (typeof(HighScore));
 		timerScript = (Timer) timer.GetComponent (typeof(Timer));
+		scoreDisplay = GameObject.Find ("scoreDisplayText");
+		levelDisplay = GameObject.Find ("levelDisplayText");
 		scoreDisplayText = scoreDisplay.GetComponent<GUIText>();
 		levelDisplayText = levelDisplay.GetComponent<GUIText>();
 

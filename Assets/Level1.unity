@@ -4523,7 +4523,6 @@ GameObject:
   - component: {fileID: 562442546}
   - component: {fileID: 562442545}
   - component: {fileID: 562442544}
-  - component: {fileID: 562442543}
   - component: {fileID: 562442542}
   m_Layer: 0
   m_Name: Lava
@@ -4561,18 +4560,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 0.2
   rend: {fileID: 0}
---- !u!114 &562442543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 562442540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2e7a4c53a6cd4bdd965f38c878b5987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
 --- !u!54 &562442544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4740,6 +4727,10 @@ Prefab:
       propertyPath: jumpClip
       value: 
       objectReference: {fileID: 8300000, guid: aacc281ebd6394d4e844880d8cfcfa2d, type: 3}
+    - target: {fileID: 1423122238370742, guid: a42105053c9f3420aa7c9559bf4588a0, type: 2}
+      propertyPath: m_Name
+      value: character
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a42105053c9f3420aa7c9559bf4588a0, type: 2}
   m_IsPrefabParent: 0
