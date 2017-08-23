@@ -9,21 +9,12 @@ public class character : MonoBehaviour {
 	public int score = 0;
 
 	// Sound Arena
-	public AudioSource SSCoins;
-	public AudioClip Coins;
-
-	public AudioSource SSJumpSound;
-	public AudioClip Jump;
-
-	public AudioSource SSLanding;
-	public AudioClip Land;
-
-	public AudioSource SSDeath;
-	public AudioClip Death;
-
-	public AudioSource SPortal;
-	public AudioClip Portal;
-
+	private AudioSource audioSource;
+	private AudioClip jumpClip;
+	private AudioClip coinClip;
+	private AudioClip landingClip;
+	private AudioClip deathClip;
+	private AudioClip portalClip;
 
 	//	Jumps
 	public float jumpPowerForward = 4f;
@@ -37,6 +28,13 @@ public class character : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody>();
 		jumpsRemaining = jumpTotal;
+		audioSource = (AudioSource)GetComponent<AudioSource>();
+
+		jumpClip = (AudioClip) Resources.Load("Sounds/jump");
+		coinClip = (AudioClip) Resources.Load("Sounds/coin");
+		landingClip = (AudioClip) Resources.Load("Sounds/landing");
+		deathClip = (AudioClip) Resources.Load("Sounds/death");
+		portalClip = (AudioClip) Resources.Load("Sounds/portal");
 	}
 
 	private bool levelComplete() {
@@ -54,7 +52,7 @@ public class character : MonoBehaviour {
 
 	private void jump() {
 		if (jumpsRemaining > 0) {
-			SSJumpSound.PlayOneShot (Jump);
+			audioSource.PlayOneShot (jumpClip);
 
 			jumpsRemaining -= 1;
 			rb.velocity = new Vector3(0, jumpVelocityUp, 0);
@@ -75,23 +73,23 @@ public class character : MonoBehaviour {
 			transform.parent = other.transform;
 			jumpsRemaining = jumpTotal;
 
-			SSLanding.PlayOneShot (Land);
+			audioSource.PlayOneShot (landingClip);
 		}
 
 		if (other.gameObject.tag == "Collectible") { // Gets coin
 			Destroy (other.gameObject);
 			incrementScore ();
-			SSCoins.PlayOneShot (Coins);
+			audioSource.PlayOneShot (coinClip);
 
 			if (score == 5) {
-				SPortal.PlayOneShot (Portal);
+				audioSource.PlayOneShot (portalClip);
 				Debug.Log("Large Portal Sound" + score);
 			}
 		}
 
 		if (other.gameObject.tag == "Lava") { // Death by Lava
 			StartCoroutine(dieAndReset ());
-			SSDeath.PlayOneShot (Death);
+			audioSource.PlayOneShot (deathClip);
 			rb.useGravity = false;
 			rb.velocity = new Vector3(0, -0.25f, 0);
 			jumpsRemaining = 0;
