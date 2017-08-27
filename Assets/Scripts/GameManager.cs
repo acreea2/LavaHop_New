@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	public static string highScoreSlug = "HighScoreForLevel";
 
 	public int level = 1;
+	public int levelCount = 9;
 	private Dictionary<int, string> levels = new Dictionary<int, string>();
 
 	void Awake() {
@@ -41,9 +42,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void generateLevels() {
-		levels.Add (1, "Level1");
-		levels.Add (2, "Level2");
-		levels.Add (3, "Level4");
-		levels.Add (4, "Level5");
+		for (int i = 1; i <= levelCount; i++) {
+			levels.Add (i, "Level" + i.ToString());
+		}
 	}
 }
