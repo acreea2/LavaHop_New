@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour {
 
 	public static string formatTimeForScoreBoard(float t) {
 		if (t <= 0) {
-			return "     -";
+			return "-";
 		}
 		float hours = Mathf.Floor (t / 60 / 60);
 		float minutes = Mathf.Floor ((t - (hours * 60)) / 60);

@@ -2,31 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class scoreBoard : MonoBehaviour {
-	public int startingLevel;
-	private TextMesh displayText;
+	private TextMesh levelDisplay;
+	private TextMesh scoreDisplay;
 	
 	void Start () {
-		displayText = GetComponent<TextMesh> ();
-		displayText.text = populateScoreboard();
-	}
-
-	string populateScoreboard() {
 		string prefSlug = GameManager.highScoreSlug;
-		string scoreBoardText = "";
-		int lastLevelToDisplay = Mathf.Min (startingLevel + 4, GameManager.instance.levelCount);
+		string level = Regex.Match (name, @"\d+").Value;
 
-		for (int level = startingLevel; level <= lastLevelToDisplay; level++) {
-			scoreBoardText += formatLevel (level)
-			+ ": "
-			+ Timer.formatTimeForScoreBoard(
-					PlayerPrefs.GetFloat (prefSlug + level.ToString (), 0)
-				)
-			+ "\n";
-		}
+		levelDisplay = transform.Find ("Level").GetComponent<TextMesh> ();
+		levelDisplay.text = level;
 
-		return scoreBoardText;
+		scoreDisplay = transform.Find ("Score").GetComponent<TextMesh> ();
+		scoreDisplay.text = Timer.formatTimeForScoreBoard (
+			PlayerPrefs.GetFloat (prefSlug + level, 0)
+		);
 	}
 
 	private string formatLevel(int level) {

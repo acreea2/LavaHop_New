@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
 	public static string highScoreSlug = "HighScoreForLevel";
 
-	public int level = 1;
+	public int currentLevel = 1;
 	public int levelCount = 9;
 	private Dictionary<int, string> levels = new Dictionary<int, string>();
 
@@ -26,12 +26,12 @@ public class GameManager : MonoBehaviour {
 		generateLevels ();
 	}
 
-	public void startGame() {
-		SceneManager.LoadScene (levels [level]);
+	public void startGame(int? level = null) {
+		SceneManager.LoadScene (levels [level ?? currentLevel]);
 	}
 
 	public int incrementLevel() {
-		int nextLevel = (level += 1);
+		int nextLevel = (currentLevel += 1);
 		SceneManager.LoadScene(levels[nextLevel]);
 
 		return nextLevel;
