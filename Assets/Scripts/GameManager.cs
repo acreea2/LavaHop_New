@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour {
 	public static string highScoreSlug = "HighScoreForLevel";
 
 	public int currentLevel = 1;
-	public int levelCount = 9;
+	public int levelCount = 10;
+
+	private bool singleLevelPlay = false;
 	private Dictionary<int, string> levels = new Dictionary<int, string>();
 
 	void Awake() {
@@ -27,14 +29,24 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void startGame(int? level = null) {
+		if (level.Equals(null)) {
+			singleLevelPlay = true;
+		} else {
+			singleLevelPlay = false;
+		}
+
 		SceneManager.LoadScene (levels [level ?? currentLevel]);
 	}
 
 	public int incrementLevel() {
-		int nextLevel = (currentLevel += 1);
-		SceneManager.LoadScene(levels[nextLevel]);
-
-		return nextLevel;
+		if (singleLevelPlay) {
+			SceneManager.LoadScene ("StartMenu");
+			return 0;
+		} else {
+			int nextLevel = (currentLevel += 1);
+			SceneManager.LoadScene(levels[nextLevel]);
+			return nextLevel;
+		}
 	}
 
 	public void reloadLevel() {
