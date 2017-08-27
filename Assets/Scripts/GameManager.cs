@@ -43,7 +43,13 @@ public class GameManager : MonoBehaviour {
 	void generateLevels() {
 		levels.Add (1, "Level1");
 		levels.Add (2, "Level2");
-		levels.Add (3, "Level4");
-		levels.Add (4, "Level5");
+		levels.Add (3, "Level3");
+		levels.Add (4, "Level4");
+		levels.Add (5, "Level5");
+		levels.Add (6, "Level6");
+		levels.Add (7, "Level7");
+		levels.Add (8, "Level8");
+		levels.Add (9, "Level9");
+		levels.Add (10, "Level10");
 	}
 }
