@@ -34,4 +34,22 @@ public class Timer : MonoBehaviour {
 			? "0" + num.ToString("f2")
 			: num.ToString("f2");
 	}
+
+	public static string formatTimeForScoreBoard(float t) {
+		if (t <= 0) {
+			return "-";
+		}
+		float hours = Mathf.Floor (t / 60 / 60);
+		float minutes = Mathf.Floor ((t - (hours * 60)) / 60);
+		float seconds = Mathf.Round ((t - (hours * 60 * 60) - (minutes * 60)));
+
+		string[] output = new string[3];
+		if (hours > 0) {
+			output[0] = hours.ToString() + "h";
+		}
+		output[1] += minutes.ToString() + "m";
+		output[2] += seconds.ToString() + "s";
+
+		return string.Join (" ", output);
+	}
 }

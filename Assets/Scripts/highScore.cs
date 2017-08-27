@@ -13,7 +13,7 @@ public class HighScore : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		displayText = GetComponent<Text> ();
-		currentLevel = GameManager.instance.level;
+		currentLevel = GameManager.instance.currentLevel;
 		prefSlug = GameManager.highScoreSlug + currentLevel;
 
 		bestTime = PlayerPrefs.GetFloat (prefSlug, 0);
@@ -25,7 +25,7 @@ public class HighScore : MonoBehaviour {
 	}
 
 	public void recordTime(float newTime) {
-		currentLevel = GameManager.instance.level;
+		currentLevel = GameManager.instance.currentLevel;
 
 		if (bestTime == 0 || bestTime > newTime) {
 			PlayerPrefs.SetFloat (prefSlug, newTime);
