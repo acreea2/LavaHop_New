@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 	void Awake() {
 		if (instance == null) {
 			instance = this;
-		} else if (instance != this) {
+		}  else if (instance != this) {
 			Destroy (gameObject);
 		}
 
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	public void startGame(int? level = null) {
 		if (level.Equals(null)) {
 			singleLevelPlay = true;
-		} else {
+		}  else {
 			singleLevelPlay = false;
 		}
 
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
 		if (singleLevelPlay) {
 			SceneManager.LoadScene ("StartMenu");
 			return 0;
-		} else {
+		}  else {
 			int nextLevel = (currentLevel += 1);
 			SceneManager.LoadScene(levels[nextLevel]);
 			return nextLevel;

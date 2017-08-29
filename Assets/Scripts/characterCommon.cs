@@ -12,13 +12,13 @@ public class characterCommon : MonoBehaviour
 			transform.Rotate (Vector3.up);
 		}
 
-		if (Input.GetKey ("w")) {
-			transform.Rotate (Vector3.left);
-		}
+//		if (Input.GetKey ("w")) {
+//			transform.Rotate (Vector3.left);
+//		}
 
-		if (Input.GetKey ("s")) {
-			transform.Rotate (Vector3.right);
-		}
+//		if (Input.GetKey ("s")) {
+//			transform.Rotate (Vector3.right);
+//		}
 	
 	}
 }
