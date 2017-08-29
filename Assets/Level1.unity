@@ -4845,11 +4845,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717667303}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &751734443 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20235321389149544, guid: a42105053c9f3420aa7c9559bf4588a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 625678272}
 --- !u!1 &760711247 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1423122238370742, guid: a42105053c9f3420aa7c9559bf4588a0,
     type: 2}
   m_PrefabInternal: {fileID: 625678272}
+--- !u!114 &760711248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760711247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1820b9108e8447781d939531812848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 751734443}
 --- !u!82 &760711254
 AudioSource:
   m_ObjectHideFlags: 0

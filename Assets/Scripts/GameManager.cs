@@ -53,6 +53,10 @@ public class GameManager : MonoBehaviour {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
+	public void exit() {
+		SceneManager.LoadScene ("StartMenu");
+	}
+
 	void generateLevels() {
 		for (int i = 1; i <= levelCount; i++) {
 			levels.Add (i, "Level" + i.ToString());
