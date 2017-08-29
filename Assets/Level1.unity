@@ -1030,7 +1030,7 @@ Prefab:
         type: 2}
       propertyPath: highScoreScript
       value: 
-      objectReference: {fileID: 297203137}
+      objectReference: {fileID: 0}
     - target: {fileID: 114248888513827032, guid: f322d7b5aa41c499b9468955192c4bec,
         type: 2}
       propertyPath: timer

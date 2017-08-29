@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HighScore : MonoBehaviour {
+public class highScore : MonoBehaviour {
 	private Text displayText;
 
 	private int currentLevel;

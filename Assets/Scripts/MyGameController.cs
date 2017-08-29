@@ -10,7 +10,7 @@ public class MyGameController : MonoBehaviour {
 	private GameObject scoreDisplay;
 	private GameObject levelDisplay;
 	private GameObject highScore;
-	private HighScore highScoreScript;
+	private highScore highScoreScript;
 	private GameObject timer;
 	private Timer timerScript;
 	private GUIText levelDisplayText;
@@ -21,7 +21,7 @@ public class MyGameController : MonoBehaviour {
 	void Start () {
 		timer = GameObject.Find ("timer");
 		highScore = GameObject.Find ("highScore");
-		highScoreScript = (HighScore) highScore.GetComponent (typeof(HighScore));
+		highScoreScript = (highScore) highScore.GetComponent (typeof(highScore));
 		timerScript = (Timer) timer.GetComponent (typeof(Timer));
 		scoreDisplay = GameObject.Find ("scoreDisplayText");
 		levelDisplay = GameObject.Find ("levelDisplayText");
