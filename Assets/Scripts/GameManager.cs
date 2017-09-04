@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour {
 
 	public void startGame(int? level = null) {
 		if (level.Equals(null)) {
-			singleLevelPlay = true;
-		}  else {
 			singleLevelPlay = false;
+		}  else {
+			singleLevelPlay = true;
 		}
 
 		SceneManager.LoadScene (levels [level ?? currentLevel]);
