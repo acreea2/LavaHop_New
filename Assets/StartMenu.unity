@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44659358, g: 0.49642843, b: 0.5748247, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731316, g: 0.38074896, b: 0.3587254, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: d55340ba7980f4d1293ae30981ae2e1a,
+  m_LightingDataAsset: {fileID: 112000002, guid: ae95327d053fc40ffab259438dbb310f,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -3490,7 +3490,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1782126991
+  randomSeed: 1275287132
   InitialModule:
     serializedVersion: 3
     enabled: 1
