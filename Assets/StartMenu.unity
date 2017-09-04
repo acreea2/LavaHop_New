@@ -306,7 +306,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6ed056ef9ac8944c8a85b36537eca359, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -540,6 +540,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.3000002
       objectReference: {fileID: 0}
+    - target: {fileID: 23507640778745888, guid: 1bedb18c7ef82428dbd6feb342eba6c3,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e2ed800221c8a4701b3743fea6fdf501, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bedb18c7ef82428dbd6feb342eba6c3, type: 2}
   m_IsPrefabParent: 0
@@ -1316,7 +1321,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -1399,7 +1404,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -1482,7 +1487,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -1837,8 +1842,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854323608}
   m_LocalRotation: {x: -0, y: 0.25344682, z: -0, w: 0.96734935}
-  m_LocalPosition: {x: 4.12, y: -2.1, z: 22.38}
-  m_LocalScale: {x: 0.12036774, y: 0.12036774, z: 0.12036774}
+  m_LocalPosition: {x: 4.85, y: -2.5, z: 21.97}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1070357109}
   m_RootOrder: 2
@@ -1865,7 +1870,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 3204448255
 --- !u!23 &854323611
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1908,7 +1913,7 @@ GameObject:
   - component: {fileID: 862340466}
   - component: {fileID: 862340467}
   m_Layer: 0
-  m_Name: ScoreLevel5 (1)
+  m_Name: ScoreLevel10
   m_TagString: StartLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1986,7 +1991,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -2069,7 +2074,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -2193,7 +2198,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -2669,7 +2674,7 @@ GameObject:
   - component: {fileID: 1044791505}
   - component: {fileID: 1044791506}
   m_Layer: 0
-  m_Name: ScoreLevel2 (1)
+  m_Name: ScoreLevel7
   m_TagString: StartLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3137,7 +3142,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -3304,7 +3309,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -6701,7 +6706,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1380325013}
   m_LocalRotation: {x: -0, y: 0.25344682, z: -0, w: 0.96734935}
-  m_LocalPosition: {x: 3.0980973, y: 5.68, z: 22.957129}
+  m_LocalPosition: {x: 1.9, y: 5.68, z: 23.63}
   m_LocalScale: {x: 0.3727508, y: 0.37275147, z: 0.37275198}
   m_Children: []
   m_Father: {fileID: 1070357109}
@@ -6714,7 +6719,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1380325013}
-  m_Text: Lava Hop!
+  m_Text: LAVA HOP
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -6722,7 +6727,7 @@ TextMesh:
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -6926,6 +6931,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114336927346812662, guid: 5fc50ebd914dc495fbd771a160426576,
+        type: 2}
+      propertyPath: startBackground
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ed056ef9ac8944c8a85b36537eca359, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fc50ebd914dc495fbd771a160426576, type: 2}
   m_IsPrefabParent: 0
@@ -6944,7 +6954,7 @@ GameObject:
   - component: {fileID: 1512689613}
   - component: {fileID: 1512689614}
   m_Layer: 0
-  m_Name: ScoreLevel3 (1)
+  m_Name: ScoreLevel8
   m_TagString: StartLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10322,7 +10332,7 @@ GameObject:
   - component: {fileID: 1613726752}
   - component: {fileID: 1613726753}
   m_Layer: 0
-  m_Name: ScoreLevel4 (1)
+  m_Name: ScoreLevel9
   m_TagString: StartLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10400,7 +10410,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
@@ -10694,7 +10704,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
 --- !u!23 &1757475391
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10833,7 +10843,7 @@ GameObject:
   - component: {fileID: 1979722756}
   - component: {fileID: 1979722757}
   m_Layer: 0
-  m_Name: ScoreLevel1 (1)
+  m_Name: ScoreLevel6
   m_TagString: StartLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11137,7 +11147,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 100
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
