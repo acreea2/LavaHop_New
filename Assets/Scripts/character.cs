@@ -38,7 +38,7 @@ public class character : MonoBehaviour {
 	}
 
 	private bool levelComplete() {
-		return score >= 1;
+		return score >= 5;
 //		return score >= gameController.coinTotal;
 	}
 
